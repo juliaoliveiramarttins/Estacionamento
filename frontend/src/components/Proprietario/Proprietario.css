@@ -1,0 +1,376 @@
+/* Container geral para o formulário de adicionar proprietário */
+.form-container-add-proprietario {
+    width: 100%;
+    max-width: 600px; /* Limitando a largura do formulário */
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do formulário de adicionar proprietário */
+.form-title-add-proprietario {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+/* Estilo para o contêiner do botão "Adicionar Proprietário" */
+.list-proprietario-add-btn-container {
+    margin-top: 20px;
+    text-align: right; 
+}
+
+/* Estilo do botão de adicionar proprietário */
+.btn-add-proprietario {
+    padding: 12px 24px;
+    background-color: #007c0a; /* Cor de fundo verde */
+    color: white; /* Cor do texto branca */
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    text-decoration: none; /* Remove o sublinhado do link */
+    display: inline-block;
+    
+}
+
+.btn-add-proprietario:hover {
+    background-color: #01ca22; 
+    transform: scale(1.05); 
+}
+
+/* Wrapper do formulário de adicionar proprietário */
+.form-wrapper-add-proprietario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo do formulário de adicionar proprietário */
+.form-add-proprietario {
+    width: 100%;
+}
+
+/* Estilo de cada grupo de input */
+.form-group-add-proprietario {
+    margin-bottom: 20px;
+}
+
+/* Estilo do rótulo do input de adicionar proprietário */
+    .form-label-add-proprietario {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0262c9;
+    text-align: left; /* Alinha o texto à esquerda */
+    display: block;  /* Garante que o label ocupe a linha inteira */
+    margin-bottom: 5px; /* Adiciona um pequeno espaço abaixo do rótulo */
+}
+
+
+/* Estilo do input de adicionar proprietário */
+.form-input-add-proprietario {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 5px;
+    box-sizing: border-box;
+    
+}
+
+/* Estilo da mensagem de erro de adicionar proprietário */
+.error-message-add-proprietario {
+    font-size: 0.9rem;
+    color: red;
+    margin-top: 5px;
+}
+
+/* Estilos para os botões */
+.form-actions-add-proprietario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-submit-add-proprietario {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit-add-proprietario:hover {
+    background-color: #218838;
+}
+
+.btn-link-add-proprietario {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.btn-link-add-proprietario:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de responsividade */
+@media (max-width: 768px) {
+    .form-container-add-proprietario {
+        padding: 15px;
+    }
+
+    .form-input-add-proprietario {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .btn-submit-add-proprietario {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+
+.list-proprietario-container {
+    padding: 20px;
+}
+
+.list-proprietario-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.list-proprietario-add-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.list-svg-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.list-proprietario-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.list-proprietario-table th,
+.list-proprietario-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    
+}
+
+.list-proprietario-table th {
+    background-color: #007bff;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.list-proprietario-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.list-proprietario-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.list-proprietario-action-btn {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: color 0.3s, transform 0.2s ease-in-out;
+    color: black; /* Ícones pretos */
+}
+
+.list-proprietario-action-btn:hover {
+    color: #007bff; /* Cor escolhida para hover */
+    transform: scale(1.1);
+}
+
+.list-proprietario-view-btn {
+    color: black;
+}
+
+.list-proprietario-edit-btn {
+    color: black;
+}
+
+.list-proprietario-delete-btn {
+    color: black;
+    background-color: transparent;
+    font-size: 1.2rem;
+}
+
+.list-proprietario-table th,
+.list-proprietario-table td {
+    border-radius: 8px; /* Bordas arredondadas da tabela */
+}
+
+.list-proprietario-delete-btn:hover {
+    color: #fff;
+    background-color: #dc3545;
+    transform: scale(1.1);
+}
+
+
+
+.read-proprietario-container {
+    padding: 20px;
+}
+
+.read-proprietario-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.read-proprietario-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.read-proprietario-table {
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.read-proprietario-table th,
+.read-proprietario-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.read-proprietario-table th {
+    background-color: #007bff;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.read-proprietario-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.read-proprietario-table th,
+.read-proprietario-table td {
+    border-radius: 8px;
+}
+
+.read-proprietario-table td {
+    font-size: 1rem;
+    color: #555;
+}
+
+.read-proprietario-table td:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.read-proprietario-table td:nth-child(even) {
+    background-color: #fff;
+}
+
+.update-proprietario-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto; /* Margem superior e inferior para afastar do topo */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.update-proprietario-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.update-proprietario-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.update-proprietario-form-group {
+    margin-bottom: 20px;
+}
+
+.update-proprietario-form-label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0262c9;
+    text-align: left;
+}
+
+.update-proprietario-form-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.update-proprietario-form-input:disabled {
+    background-color: #f4f4f4;
+}
+
+.update-proprietario-submit-button {
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+.update-proprietario-submit-button:hover {
+    background-color: #45a049;
+}
+
+.update-proprietario-link-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.update-proprietario-view-all-link {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.update-proprietario-view-all-link:hover {
+    text-decoration: underline;
+}
