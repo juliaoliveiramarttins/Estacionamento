@@ -1,6 +1,9 @@
 Utilizaremos o banco de dados MongoDB, na sua conexão local crie um novo banco chamado “Estacionamento”, que tenha as tabelas “Proprietario” e “ Veiculos”
 
+
 Abra as pastas BackEnd2 e FrontEnd no seu editor de código.
+
+
 Na pasta BackEnd2 você precisará rodar no terminal os seguintes códigos:
 
 
